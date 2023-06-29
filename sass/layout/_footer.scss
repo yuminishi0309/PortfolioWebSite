@@ -1,0 +1,70 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.footer {
+    padding: 24px 5% 64px 5%;
+    // transition: .6s;
+    color: $grayTxt;
+    @media screen and (min-width: 768px) {
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 160px;
+    }
+    &__wrap {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__gnav {
+        margin-bottom: 36px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+    &__ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__list {
+        margin-left: 10px;
+        @media screen and (min-width: 768px) {
+            margin-left: 20px;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-left: 40px;
+        }
+    }
+    &__link {
+        padding: 8px;
+        color: $grayHoverBefore;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        &:hover {
+            color: $grayHoverAfter;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            padding: 10px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+    &__copy {
+        font-size: 9px;
+        
+        @media screen and (min-width: 768px) {
+            font-size: 10px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 12px;
+        }
+    }
+}

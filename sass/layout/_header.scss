@@ -1,0 +1,270 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.top {
+    // top page ナビゲーション
+    &__gnav {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            position: absolute;
+            top: 54px;
+            right: 122px;
+            display: block;
+            z-index: 3;
+        }
+
+        @media screen and (min-width: 1024px) {
+            right: 200px;
+        }
+    }
+    &__nav {
+        display: flex;
+    }
+    &__list {
+        margin-right: 10px;
+        
+        @media screen and (min-width: 1024px) {
+            margin-right: 36px;
+        }
+    }
+    &__link {
+        display: block;
+        padding: 10px 20px;
+        color: $blackTxt;
+        font-family: $Inter;
+        font-size: 13px;
+        text-decoration: none;
+
+        &:hover {
+            color: $graySub;
+        }
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 28px 5%;
+    z-index: 2;
+
+    @media screen and (min-width: 768px) {
+        padding: 50px 4%;
+    }
+
+    &__ttl {
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__logoLink {
+        display: block;
+    }
+    
+}
+//メニューボタン
+.menuBtn {
+    padding: 10px;
+    cursor: pointer;
+
+    // 試行中　メニューボタンアイコン　アニメーション
+    &__line06,
+    &__line05,
+    &__line04,
+    &__line03,
+    &__line02,
+    &__line01 {
+        // stroke: $grayTxt;
+        transition: .3s;
+    }
+    // 試行中　ライン右06～左01アニメーション
+    &__line06 {
+        animation: toBlack 0.2s ease-in-out forwards, toWhite 0.2s ease-in-out 2.75s forwards;
+        // stroke: $grayTxt;
+    }
+
+    @keyframes toBlack {
+        0% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $blackTxt;
+        }
+    }
+    @keyframes toWhite {
+        0% {
+            stroke: $blackTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    @keyframes pile06 {
+        1% {
+            stroke: $blackTxt;
+        }
+        75% {
+            stroke: $blackTxt;
+        }
+        76% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    &__line05 {
+        // stroke: $grayTxt;
+        animation: toBlack 0.2s ease-in-out 0.15s forwards, toWhite 0.2s ease-in-out 2.6s forwards;
+        // transition: .3s;
+    }
+    @keyframes pile05 {
+        4% {
+            stroke: $grayTxt;
+        }
+        5% {
+            stroke: $blackTxt;
+        }
+        70% {
+            stroke: $blackTxt;
+        }
+        71% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    &__line04 {
+        // stroke: $grayTxt;
+        animation: toBlack 0.2s ease-in-out 0.3s forwards, toWhite 0.2s ease-in-out 2.45s forwards;
+        // transition: .3s;
+    }
+    @keyframes pile04 {
+        9% {
+            stroke: $grayTxt;
+        }
+        10% {
+            stroke: $blackTxt;
+        }
+        65% {
+            stroke: $blackTxt;
+        }
+        66% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    &__line03 {
+        animation: toBlack 0.2s ease-in-out 0.45s forwards, toWhite 0.2s ease-in-out 2.3s forwards;
+        // stroke: $grayTxt;
+        // transition: .3s;
+    }
+    @keyframes pile03 {
+        14% {
+            stroke: $grayTxt;
+        }
+        15% {
+            stroke: $blackTxt;
+        }
+        60% {
+            stroke: $blackTxt;
+        }
+        61% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    &__line02 {
+        animation: toBlack 0.2s ease-in-out 0.6s forwards, toWhite 0.2s ease-in-out 2.15s forwards;
+        // stroke: $grayTxt;
+        // transition: .3s;
+    }
+    @keyframes pile02 {
+        19% {
+            stroke: $grayTxt;
+        }
+        20% {
+            stroke: $blackTxt;
+        }
+        55% {
+            stroke: $blackTxt;
+        }
+        56% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+    &__line01 {
+        animation: toBlack 0.2s ease-in-out 0.75s forwards, toWhite 0.2s ease-in-out 2s forwards;
+        // stroke: $grayTxt;
+        // transition: .3s;
+    }
+    @keyframes pile01 {
+        24% {
+            stroke: $grayTxt;
+        }
+        25% {
+            stroke: $blackTxt;
+        }
+        50% {
+            stroke: $blackTxt;
+        }
+        51% {
+            stroke: $grayTxt;
+        }
+        100% {
+            stroke: $grayTxt;
+        }
+    }
+
+
+    // 元のアニメーション
+    // &__line06,
+    // &__line05,
+    // &__line04,
+    // &__line03,
+    // &__line02,
+    // &__line01 {
+    //     stroke: $grayTxt;
+    //     animation: menuBtn 6s ease-in-out infinite;
+    // }
+    // &__line05 {
+    //     animation-delay: .1s;
+    // }
+    // &__line04 {
+    //     animation-delay: .2s;
+    // }
+    // &__line03 {
+    //     animation-delay: .3s;
+    // }
+    // &__line02 {
+    //     animation-delay: .4s;
+    // }
+    // &__line01 {
+    //     animation-delay: .5s;
+    // }
+}

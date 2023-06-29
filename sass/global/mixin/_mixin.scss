@@ -1,0 +1,46 @@
+// settingフォルダの変数を読み込みます
+
+@use "../setting" as *;
+
+// メディアクエリ
+  // ---タブレット
+  @mixin tab($min-width: 768px) {
+    @media screen and (min-width: $min-width){
+      @content;
+    }
+  }
+  // ---PC
+  @mixin pc($min-width: 1024px) {
+    @media screen and (min-width: $min-width){
+      @content;
+    }
+  }
+
+// セクションタイトル
+@mixin secTtl {
+  font-family: $Inter;
+  font-size: 12px;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+// セクション間PaddingTop
+@mixin secPaddingTop {
+  padding-top: 88px;
+  @media screen and (min-width: 768px) {
+    padding-top: 140px;
+  }
+}
+
+//セクション左右余白
+@mixin secMarginLR {
+  margin: 0 5%;
+  @media screen and (min-width: 768px) {
+    margin: 0 10%;
+  }
+}

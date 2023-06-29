@@ -1,0 +1,46 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.smenu-fadeIn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-open {
+    opacity: 1;
+    z-index: 2;
+}
+
+// works/skills nav設定
+//固定
+.navFixed {
+    position: fixed;
+    top: 20vh;
+    right: 5%;
+    z-index: 5;
+
+    @media screen and (min-width: 768px) {
+        right: 10%;
+    }
+}
+.navOpacity {
+    opacity: 0;
+    transition: 1s;
+}
+//色変更
+.navBgColorB {
+    color: $grayBg;
+    background: $blackTxt;
+    transition: .3s;
+}
+.navBgColorW {
+    color: $blackTxt;
+    background: $grayBg;
+    transition: .3s;
+}
+
+// CONTACT & footer 背景色変更
+.bgChange {
+    background: $footerBg;
+}
