@@ -26,9 +26,7 @@ const menuBtnLine = document.querySelectorAll(`[id^='menuBtnLine']`);
 
 for (let i = 0; i < menuBtnLine.length; i++) {
     function animation() {
-        
         menuBtnLine.forEach(e => {
-
             // クラス名あるか調べて、同じクラス名をつけたり外したりまではできてる
             // できない：id = menuBtnLine01〜06 => 各数字に対応したクラス menuBtn__line01〜06　追加したい
 
@@ -40,15 +38,10 @@ for (let i = 0; i < menuBtnLine.length; i++) {
             } else {
                 e.classList.remove(`menuBtn__line`);
             }
-            
         });
     }
 }
 setInterval(animation, 3000);
-
-
-
-
 
 //スムーススクロール----------------------------------------------------------------------
 const smoothScroll = document.querySelectorAll('a[href^="#"]');
@@ -98,7 +91,6 @@ window.addEventListener('scroll', function () {
     } else {
         menuNav.classList.remove('navFixed');
     }
-
     if (position > skillsOffsetBottom - 100) {
         menuNav.classList.add('navOpacity');
     } else {
@@ -120,7 +112,6 @@ window.addEventListener('scroll', function () {
     } else {
         navWorks.classList.remove('navBgColorW');
         navSkills.classList.remove('navBgColorB');
-
     }
 });
 
@@ -147,7 +138,6 @@ for (let i = 0; i < swiperSlide.length; i++) {
         for (let i = 0; i < closeModal.length; i++) {
             closeModal[i].addEventListener('click', (e) => {
                 openModal.classList.remove('modal-open');
-
                 // PC版スクロールオン
                 document.removeEventListener('touchmove', noscroll);
                 document.removeEventListener('wheel', noscroll);
