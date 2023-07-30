@@ -52,8 +52,6 @@ for (let i = 0; i < smoothScroll.length; i++) {
         const targetElement = document.getElementById(href.replace('#', ''));
         const rect = targetElement.getBoundingClientRect().top;
         const offset = window.pageYOffset;
-        // const gap = 100;
-        // const target = rect + offset - gap;
         const target = rect + offset;
         window.scrollTo({
             top: target,
@@ -128,7 +126,6 @@ for (let i = 0; i < swiperSlide.length; i++) {
         const openModal = document.querySelector(modal);
         openModal.classList.add('modal-open');
         // PC版スクロールオフ
-        // const windowWidth = window.innerWidth;
         if (isPCSize) {
             document.addEventListener('touchmove', noscroll, { passive: false });
             document.addEventListener('wheel', noscroll, { passive: false });
@@ -172,42 +169,25 @@ for (let i = 0; i < designWorks.length; i++) {
 }
 
 // SKILLSパララックスアニメーション設定-------------------------------------------
-// Ynote:パララックスさせるエリアの箱を全部取得
 const activeArea = document.querySelectorAll('.js-parallaxArea');
-//ウィンドウサイズ幅1367以上で処理
 const activeSize = 1367
 if (activeSize <= windowWidth) {
-    // Ynote:取得した各箱にeventを設定する
     activeArea.forEach((e, i) => {
-        // Ynote:パララックスする要素を全部取得する
         const target = e.querySelectorAll('.js-parallax');
-        // Ynote:ブラウザの左上からのエリア箱の左端の位置を取得
         const areaPosX = e.getBoundingClientRect().left;
-        //Ynote: 箱のX中心位置 = ブラウザからの箱の左端の位置＋箱の横幅/2
         const xAreaCenter = areaPosX + activeArea[i].offsetWidth / 2;
-        // const parallaxVal = 1000;
-        // Ynote:箱内にマウスムーブした時の処理
+        // 箱内にマウスムーブした時の処理
         e.addEventListener('mousemove', (el) => {
-            //垂直方向のスクロール量取得
             const scrollPos = window.pageYOffset;
-            //ブラウザの上を起点として見たY軸方向の座標
             const areaPosY = e.getBoundingClientRect().top;
-            // 箱のY中心位置(サイトtopからの位置)= スクロール量 + ブラウザの上を起点として見たY軸方向の座標 + js-parallaxAreaの高さの半分
             const yAreaCenter = scrollPos + areaPosY + activeArea[i].offsetHeight / 2;
-        // 箱の中心からのマウスの位置x = 画面左端からマウスx位置 - 該当箱の中心x位置
-        const x = (el.pageX - xAreaCenter);
-        //箱の中心からのマウスの位置y = サイト最上部からのマウスの位置 - 該当箱の中心y位置(サイトtopからの位置)
-        const y = (el.pageY - yAreaCenter);
-        //パララックスさせる要素にstyle指定
-        //shadow-dark
-        target[0].style.transform = `translate(${x * .006}px, ${y * .016}px)`;
-        //shadow-light
-        target[1].style.transform = `translate(${x * .03}px, ${y * .03}px)`;
-        
-        // shadow動かす　元のやつ
-        // for (let i = 0; i < target.length; i++) {
-            //     target[i].style.transform = `translate(${x/10}px, ${y/10}px)`;
-            // }
+            const x = (el.pageX - xAreaCenter);
+            const y = (el.pageY - yAreaCenter);
+            //パララックスさせる要素にstyle指定
+            //shadow-dark
+            target[0].style.transform = `translate(${x * .006}px, ${y * .016}px)`;
+            //shadow-light
+            target[1].style.transform = `translate(${x * .03}px, ${y * .03}px)`;
         });
     });
 }

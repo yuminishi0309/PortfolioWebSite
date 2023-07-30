@@ -9,7 +9,7 @@
 
 .modal-open {
     opacity: 1;
-    z-index: 2;
+    z-index: 4;
 }
 
 // works/skills nav設定
@@ -18,7 +18,7 @@
     position: fixed;
     top: 20vh;
     right: 5%;
-    z-index: 5;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
         right: 10%;

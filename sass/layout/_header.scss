@@ -56,7 +56,7 @@
     align-items: center;
     width: 100%;
     padding: 28px 5%;
-    z-index: 2;
+    z-index: 3;
 
     @media screen and (min-width: 768px) {
         padding: 50px 4%;
@@ -240,31 +240,4 @@
             stroke: $grayTxt;
         }
     }
-
-
-    // 元のアニメーション
-    // &__line06,
-    // &__line05,
-    // &__line04,
-    // &__line03,
-    // &__line02,
-    // &__line01 {
-    //     stroke: $grayTxt;
-    //     animation: menuBtn 6s ease-in-out infinite;
-    // }
-    // &__line05 {
-    //     animation-delay: .1s;
-    // }
-    // &__line04 {
-    //     animation-delay: .2s;
-    // }
-    // &__line03 {
-    //     animation-delay: .3s;
-    // }
-    // &__line02 {
-    //     animation-delay: .4s;
-    // }
-    // &__line01 {
-    //     animation-delay: .5s;
-    // }
 }
