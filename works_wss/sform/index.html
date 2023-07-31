@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>説明会お申込みフォーム</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" media="all">
+  </head>
+  <body id="sform">
+    <div class="wrapper">
+      <header class="header">
+
+        <h1 class="header__ttl">
+          <a href="../index.html" class="header__link"><img
+            class="header__logo"
+            src="../images/top/logo1.png"
+            alt="ロゴです"
+          /></a>
+        </h1>
+  <!-- ------------------------ナビゲーション------------------------------- -->
+  <nav class="gnav">
+    <ul class="gnav__nav">
+      <li class="gnav__list">
+        <a href="../about/index.html" class="gnav__link">WSSについて</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../job/index.html" class="gnav__link">就職のリアル</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../study/index.html" class="gnav__link">学習のリアル</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../student/index.html" class="gnav__link">学生のリアル</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../session/" class="gnav__link">説明会</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../index.html#flow" class="gnav__link">入校までの流れ</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../question/index.html" class="gnav__link">Q&amp;A</a>
+      </li>
+      <li class="gnav__list">
+        <a href="../index.html#access" class="gnav__link">Access</a>
+      </li>
+    </ul>
+    <!-- --------------------右上フォームリンクボタン--------------------- -->
+    <div class="gnav__btn">
+      <p class="gnav__txt">
+        <a href="index.html" class="gnav__link--01">説明会お申込み</a>
+      </p>
+      <p class="gnav__txt">
+        <a href="../pform/index.html" class="gnav__link--02">お問合せ<br>
+          <span class="gnav__span">パンフレット<br> お申込み</span>
+        </a>
+      </p>
+    </div>
+  </nav>
+</header>
+
+      <main class="sform">
+        <section class="ssform">
+        <p class="sform__ttl">説明会お申込みフォーム</p>
+        <table class="sform__entry">
+          <caption>*は必須項目です</caption>
+          <tr>
+            <th>お名前*</th>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <th>お名前(フリガナ)*</th>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td><input type="text" name="address"></td>
+          </tr>
+          <tr>
+            <th>メールアドレス*</th>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <th>電話番号*</th>
+            <td><input type="tel" name="tel"></td>
+          </tr>
+          <tr>
+            <th>希望日*</th>
+            <td><input type="date" name="date" value="2022-01-01"></td>
+          </tr>
+          <tr>
+            <th>希望時間*</th>
+            <td><input type="time" name="time" value="12:00"></td>
+          </tr>
+          <tr>
+            <th class="comment">備考欄</th>
+            <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+          </tr>
+        </table>
+
+        <p class="personal">個人情報の取り扱いについて</p>
+        <div class="privacy"><a href="../privacy/index.html" class="privacy__link">保護方針はこちら</a></div>
+          <table class="sform__send">
+            <tr class="check">
+              <td>
+                <input type="checkbox" name="check" value="保護方針に同意します">保護方針に同意します
+              </td>
+            </tr>
+            <tr class="send">
+              <td><input type="submit" value="送信"></td>
+            </tr>
+            <tr>
+          </table>
+        </section>  
+
+      </main>
+
+      <footer class="footer">
+        <p class="footer__ttl">あなたも一歩、踏み出しませんか？</p>
+        <p class="footer__txt">We will support your step.</p>
+        <p class="footer__pic">
+          <a href="index.html" class="footer__link--logo">
+            <img class="footer__img" src="../images/footer_logo.png" alt="WSS(ウェブスタディサッポロ)">
+          </a>
+        </p>
+        <div class="footer__box">
+          <p class="footer__list">
+            <a href="https://next1sapporo.net/" target="_blank" class="footer__link--operating">株式会社ネクストワン札幌支社</a>
+          </p>
+          <p class="footer__list">
+            <a href="../privacy/index.html" class="footer__link--privacy">個人情報保護方針について</a>
+          </p>
+        </div>
+        <p class="footer__btn">
+          <a href="../index.html" class="footer__link--top"></a>
+        </p>
+        <p class="footer__copy">
+          <small class="footer__small">&copy;NEXTONE SAPPORO.Inc</small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
