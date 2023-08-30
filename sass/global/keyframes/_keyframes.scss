@@ -2,23 +2,23 @@
 
 @use "../setting" as *;
 
-//メニューボタンアイコン　アニメーション
-// 工事中
-// @keyframes menuBtn {
-
-//     1% {
-//         stroke: $grayTxt;
-//     }
-//     10% {
-//         stroke: $grayTxt;
-//     }
-//     11% {
-//         stroke: $blackTxt;
-//     }
-//     100% {
-//         stroke: $blackTxt;
-//     }
-// }
+//メニューボタンアイコン アニメーション
+@keyframes toWhite {
+    0% {
+        stroke: $blackTxt;
+    }
+    100% {
+        stroke: $grayTxt;
+    }
+}
+@keyframes toBlack {
+    0% {
+        stroke: $grayTxt;
+    }
+    100% {
+        stroke: $blackTxt;
+    }
+}
 
 //元のアニメーション
 @keyframes menuBtn {

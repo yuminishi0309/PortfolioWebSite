@@ -78,37 +78,33 @@
     padding: 10px;
     cursor: pointer;
 
-    // 試行中　メニューボタンアイコン　アニメーション
-    &__line06,
-    &__line05,
-    &__line04,
-    &__line03,
+    // メニューボタンアイコン アニメーション
+    &__line01,
     &__line02,
-    &__line01 {
-        // stroke: $grayTxt;
+    &__line03,
+    &__line04,
+    &__line05,
+    &__line06 {
         transition: .3s;
     }
-    // 試行中　ライン右06～左01アニメーション
-    &__line06 {
-        animation: toBlack 0.2s ease-in-out forwards, toWhite 0.2s ease-in-out 2.75s forwards;
-        // stroke: $grayTxt;
-    }
 
-    @keyframes toBlack {
-        0% {
-            stroke: $grayTxt;
-        }
-        100% {
-            stroke: $blackTxt;
-        }
+    &__line01 {
+        animation: toWhite 0.2s ease-in-out 0s forwards, toBlack 0.2s ease-in-out 2.8s forwards;
     }
-    @keyframes toWhite {
-        0% {
-            stroke: $blackTxt;
-        }
-        100% {
-            stroke: $grayTxt;
-        }
+    &__line02 {
+        animation: toWhite 0.2s ease-in-out 0.15s forwards, toBlack 0.2s ease-in-out 2.65s forwards;
+    }
+    &__line03 {
+        animation: toWhite 0.2s ease-in-out 0.3s forwards, toBlack 0.2s ease-in-out 2.5s forwards;
+    }
+    &__line04 {
+        animation: toWhite 0.2s ease-in-out 0.45s forwards, toBlack 0.2s ease-in-out 2.35s forwards;
+    }
+    &__line05 {
+        animation: toWhite 0.2s ease-in-out 0.6s forwards, toBlack 0.2s ease-in-out 2.2s forwards;
+    }
+    &__line06 {
+        animation: toWhite 0.2s ease-in-out 0.75s forwards, toBlack 0.2s ease-in-out 2.05s forwards;
     }
 
     @keyframes pile06 {
@@ -126,11 +122,6 @@
         }
     }
 
-    &__line05 {
-        // stroke: $grayTxt;
-        animation: toBlack 0.2s ease-in-out 0.15s forwards, toWhite 0.2s ease-in-out 2.6s forwards;
-        // transition: .3s;
-    }
     @keyframes pile05 {
         4% {
             stroke: $grayTxt;
@@ -149,11 +140,6 @@
         }
     }
 
-    &__line04 {
-        // stroke: $grayTxt;
-        animation: toBlack 0.2s ease-in-out 0.3s forwards, toWhite 0.2s ease-in-out 2.45s forwards;
-        // transition: .3s;
-    }
     @keyframes pile04 {
         9% {
             stroke: $grayTxt;
@@ -172,11 +158,6 @@
         }
     }
 
-    &__line03 {
-        animation: toBlack 0.2s ease-in-out 0.45s forwards, toWhite 0.2s ease-in-out 2.3s forwards;
-        // stroke: $grayTxt;
-        // transition: .3s;
-    }
     @keyframes pile03 {
         14% {
             stroke: $grayTxt;
@@ -195,11 +176,6 @@
         }
     }
 
-    &__line02 {
-        animation: toBlack 0.2s ease-in-out 0.6s forwards, toWhite 0.2s ease-in-out 2.15s forwards;
-        // stroke: $grayTxt;
-        // transition: .3s;
-    }
     @keyframes pile02 {
         19% {
             stroke: $grayTxt;
@@ -218,11 +194,6 @@
         }
     }
 
-    &__line01 {
-        animation: toBlack 0.2s ease-in-out 0.75s forwards, toWhite 0.2s ease-in-out 2s forwards;
-        // stroke: $grayTxt;
-        // transition: .3s;
-    }
     @keyframes pile01 {
         24% {
             stroke: $grayTxt;

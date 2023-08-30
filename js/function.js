@@ -1,5 +1,3 @@
-
-
 // ===============  JS記述  ==============================================================
 // レスポンシブ設定
 const windowPC = 1024;
@@ -22,26 +20,15 @@ smenu.addEventListener('click', function () {
 
 //menuBtnアニメーション繰り返し設定------------------------------------------------------
 const menuBtnLine = document.querySelectorAll(`[id^='menuBtnLine']`);
-// console.log(menuBtnLine);
+console.log(menuBtnLine);
+const elements = ["menuBtnLine01", "menuBtnLine02", "menuBtnLine03", "menuBtnLine04", "menuBtnLine05", "menuBtnLine06"];
+const classNames = ["menuBtn__line01", "menuBtn__line02", "menuBtn__line03", "menuBtn__line04", "menuBtn__line05", "menuBtn__line06"];
 
-for (let i = 0; i < menuBtnLine.length; i++) {
-    function animation() {
-        menuBtnLine.forEach(e => {
-            // クラス名あるか調べて、同じクラス名をつけたり外したりまではできてる
-            // できない：id = menuBtnLine01〜06 => 各数字に対応したクラス menuBtn__line01〜06　追加したい
-
-            const hasClass = menuBtnLine[i].classList.contains(`[class^='menuBtn__Line']`);
-            // console.log(hasClass);
-            if (hasClass === false) {
-                e.classList.add(`menuBtn__Line`);
-                
-            } else {
-                e.classList.remove(`menuBtn__line`);
-            }
-        });
+setInterval(function(){
+    for (let i = 0; i < elements.length; i++) {
+        document.getElementById(elements[i]).classList.toggle(classNames[i]);
     }
-}
-setInterval(animation, 3000);
+}, 3000);
 
 //スムーススクロール----------------------------------------------------------------------
 const smoothScroll = document.querySelectorAll('a[href^="#"]');
@@ -67,14 +54,14 @@ window.addEventListener('scroll', () => {
     mvImg.style.transform = 'translateY('+ 0 + imgVerScrollY + 'px) scale(1.4)';
 });
 
-// Works Area Nav設定　固定＆色変更--------------------------------------------------
+// Works Area Nav設定 固定＆色変更--------------------------------------------------
 window.addEventListener('scroll', function () {
     const menuNav = document.querySelector('#js-scroll');
     const navWorks = document.querySelector('#js-worksColor');
     const navSkills = document.querySelector('#js-skillsColor');
     //SP
     //nav固定
-    //worksセクション取得　→　セクションのtop取得する
+    //worksセクション取得 → セクションのtop取得する
     const getWorks = document.querySelector('#works');
     const worksOffsetTop = Math.floor(getWorks.getBoundingClientRect().top);
     const worksOffsetBottom = Math.floor(getWorks.getBoundingClientRect().bottom);
@@ -83,7 +70,7 @@ window.addEventListener('scroll', function () {
     const skillsOffsetBottom = Math.floor(getSkills.getBoundingClientRect().bottom);
     const position = Math.floor(window.innerHeight * .12);
     //worksセクショントップがwindow(position)の上10%の高さを過ぎたら対象要素にクラスをつける
-    // nav　fixed/opacity設定
+    // nav fixed/opacity設定
     if (position > worksOffsetTop && position < skillsOffsetBottom) {
         menuNav.classList.add('navFixed');
     } else {
