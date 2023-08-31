@@ -2,11 +2,100 @@
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
 
+// ナビゲーションメニュー
 .smenu-fadeIn {
     opacity: 1;
     pointer-events: auto;
 }
 
+// メニューボタンアイコン アニメーション
+.menuBtn {
+    &__line01,
+    &__line02,
+    &__line03,
+    &__line04,
+    &__line05,
+    &__line06 {
+        transition: .3s;
+    }
+
+    &__line01 {
+        animation: toWhite 0.2s ease-in-out 0s forwards, toBlack 0.2s ease-in-out 2.8s forwards;
+    }
+    &__line02 {
+        animation: toWhite 0.2s ease-in-out 0.15s forwards, toBlack 0.2s ease-in-out 2.65s forwards;
+    }
+    &__line03 {
+    animation: toWhite 0.2s ease-in-out 0.3s forwards, toBlack 0.2s ease-in-out 2.5s forwards;
+    }
+    &__line04 {
+        animation: toWhite 0.2s ease-in-out 0.45s forwards, toBlack 0.2s ease-in-out 2.35s forwards;
+    }
+    &__line05 {
+        animation: toWhite 0.2s ease-in-out 0.6s forwards, toBlack 0.2s ease-in-out 2.2s forwards;
+    }
+    &__line06 {
+        animation: toWhite 0.2s ease-in-out 0.75s forwards, toBlack 0.2s ease-in-out 2.05s forwards;
+    }
+}
+
+// pile iconアニメーション
+.pileIcon {
+    &__line01,
+    &__line02,
+    &__line03,
+    &__line04,
+    &__line05,
+    &__line06,
+    &__line07,
+    &__line08,
+    &__line09,
+    &__line10,
+    &__line11,
+    &__line12 {
+        transition: .3s;
+    }
+
+    &__line12 {
+        animation: toBlack 0.15s ease-in-out 0s forwards, toWhite 0.15s ease-in-out 3.5s forwards;
+    }
+    &__line11 {
+        animation: toBlack 0.15s ease-in-out 0.1s forwards, toWhite 0.15s ease-in-out 3.4s forwards;
+    }
+    &__line10 {
+        animation: toBlack 0.15s ease-in-out 0.2s forwards, toWhite 0.15s ease-in-out 3.3s forwards;
+    }
+    &__line09 {
+        animation: toBlack 0.15s ease-in-out 0.3s forwards, toWhite 0.15s ease-in-out 3.2s forwards;
+    }
+    &__line08 {
+        animation: toBlack 0.15s ease-in-out 0.4s forwards, toWhite 0.15s ease-in-out 3.1s forwards;
+    }
+    &__line07 {
+        animation: toBlack 0.15s ease-in-out 0.5s forwards, toWhite 0.15s ease-in-out 3.0s forwards;
+    }
+    &__line06 {
+        animation: toBlack 0.15s ease-in-out 0.6s forwards, toWhite 0.15s ease-in-out 2.9s forwards;
+    }
+    &__line05 {
+        animation: toBlack 0.15s ease-in-out 0.7s forwards, toWhite 0.15s ease-in-out 2.8s forwards;
+    }
+    &__line04 {
+        animation: toBlack 0.15s ease-in-out 0.8s forwards, toWhite 0.15s ease-in-out 2.7s forwards;
+    }
+    &__line03 {
+        animation: toBlack 0.15s ease-in-out 0.9s forwards, toWhite 0.15s ease-in-out 2.6s forwards;
+    }
+    &__line02 {
+        animation: toBlack 0.15s ease-in-out 1.0s forwards, toWhite 0.15s ease-in-out 2.5s forwards;
+    }
+    &__line01 {
+        animation: toBlack 0.15s ease-in-out 1.1s forwards, toWhite 0.15s ease-in-out 2.4s forwards;
+    }
+}
+
+
+// モーダル
 .modal-open {
     opacity: 1;
     z-index: 4;

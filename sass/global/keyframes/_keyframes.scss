@@ -8,12 +8,12 @@
         stroke: $blackTxt;
     }
     100% {
-        stroke: $grayTxt;
+        stroke: #a9a9a9;
     }
 }
 @keyframes toBlack {
     0% {
-        stroke: $grayTxt;
+        stroke: #a9a9a9;
     }
     100% {
         stroke: $blackTxt;
