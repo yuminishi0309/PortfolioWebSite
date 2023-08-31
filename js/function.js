@@ -20,7 +20,7 @@ smenu.addEventListener('click', function () {
 
 //menuBtnアニメーション繰り返し設定------------------------------------------------------
 const menuBtnLine = document.querySelectorAll(`[id^='menuBtnLine']`);
-console.log(menuBtnLine);
+// console.log(menuBtnLine);
 const elements = ["menuBtnLine01", "menuBtnLine02", "menuBtnLine03", "menuBtnLine04", "menuBtnLine05", "menuBtnLine06"];
 const classNames = ["menuBtn__line01", "menuBtn__line02", "menuBtn__line03", "menuBtn__line04", "menuBtn__line05", "menuBtn__line06"];
 
@@ -29,6 +29,17 @@ setInterval(function(){
         document.getElementById(elements[i]).classList.toggle(classNames[i]);
     }
 }, 3000);
+//pileIconアニメーション繰り返し設定------------------------------------------------------
+const pileIconLine = document.querySelectorAll(`[id^='pileIconLine']`);
+console.log(pileIconLine);
+const pileElements = ["pileIconLine01", "pileIconLine02", "pileIconLine03", "pileIconLine04", "pileIconLine05", "pileIconLine06", "pileIconLine07", "pileIconLine08", "pileIconLine09", "pileIconLine10", "pileIconLine11", "pileIconLine12"];
+const pileClassNames = ["pileIcon__line01", "pileIcon__line02", "pileIcon__line03", "pileIcon__line04", "pileIcon__line05", "pileIcon__line06", "pileIcon__line07", "pileIcon__line08", "pileIcon__line09", "pileIcon__line10", "pileIcon__line11", "pileIcon__line12"];
+
+setInterval(function(){
+    for (let i = 0; i < pileElements.length; i++) {
+        document.getElementById(pileElements[i]).classList.toggle(pileClassNames[i]);
+    }
+}, 5000);
 
 //スムーススクロール----------------------------------------------------------------------
 const smoothScroll = document.querySelectorAll('a[href^="#"]');
