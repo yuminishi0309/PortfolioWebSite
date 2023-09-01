@@ -48,7 +48,7 @@ for (let i = 0; i < smoothScroll.length; i++) {
         const href = smoothScroll[i].getAttribute('href');
         const targetElement = document.getElementById(href.replace('#', ''));
         const rect = targetElement.getBoundingClientRect().top;
-        const offset = window.pageYOffset;
+        const offset = window.scrollY;
         const target = rect + offset;
         window.scrollTo({
             top: target,
@@ -81,7 +81,7 @@ window.addEventListener('scroll', function () {
     const position = Math.floor(window.innerHeight * .12);
     //worksセクショントップがwindow(position)の上10%の高さを過ぎたら対象要素にクラスをつける
     // nav fixed/opacity設定
-    if (position > worksOffsetTop && position < skillsOffsetBottom) {
+    if (position > worksOffsetTop && position) {
         menuNav.classList.add('navFixed');
     } else {
         menuNav.classList.remove('navFixed');

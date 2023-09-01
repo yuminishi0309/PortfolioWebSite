@@ -115,7 +115,8 @@
 }
 .navOpacity {
     opacity: 0;
-    transition: 1s;
+    transition: .6s;
+    pointer-events: none;
 }
 //色変更
 .navBgColorB {
