@@ -2,7 +2,7 @@
 
 @use "../setting" as *;
 
-//メニューボタンアイコン アニメーション
+//メニューボタン、pileアイコン アニメーション
 @keyframes toWhite {
     0% {
         stroke: $blackTxt;

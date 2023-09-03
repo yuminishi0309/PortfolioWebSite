@@ -123,18 +123,18 @@ for (let i = 0; i < swiperSlide.length; i++) {
         const openModal = document.querySelector(modal);
         openModal.classList.add('modal-open');
         // PC版スクロールオフ
-        if (isPCSize) {
-            document.addEventListener('touchmove', noscroll, { passive: false });
-            document.addEventListener('wheel', noscroll, { passive: false });
-        }
+        // if (isPCSize) {
+        //     document.addEventListener('touchmove', noscroll, { passive: false });
+        //     document.addEventListener('wheel', noscroll, { passive: false });
+        // }
 
         const closeModal = document.querySelectorAll('.modal__wrap');
         for (let i = 0; i < closeModal.length; i++) {
             closeModal[i].addEventListener('click', (e) => {
                 openModal.classList.remove('modal-open');
                 // PC版スクロールオン
-                document.removeEventListener('touchmove', noscroll);
-                document.removeEventListener('wheel', noscroll);
+                // document.removeEventListener('touchmove', noscroll);
+                // document.removeEventListener('wheel', noscroll);
             });
         }
         //Modal内でgo siteボタンクリック後、モーダルを非表示にしない
