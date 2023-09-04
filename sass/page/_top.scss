@@ -966,9 +966,9 @@
     }
 
     &__pic {
-        display: flex;
+        // display: flex;
         width: 100%;
-        height: 216px;
+        // height: 216px;
         padding-bottom: 24px;
         cursor: pointer;
     }
@@ -976,8 +976,9 @@
     &__img {
         display: block;
         width: 100%;
-        // height: 100%;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
+        // object-fit: contain;
     }
 
     &__caption {
