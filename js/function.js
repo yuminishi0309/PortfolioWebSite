@@ -153,14 +153,14 @@ for (let i = 0; i < designWorks.length; i++) {
         const openDModal = document.querySelector(DModal);
         openDModal.classList.add('modal-open');
         //スクロールオフ
-        document.addEventListener('touchmove', noscroll, { passive: false });
-        document.addEventListener('wheel', noscroll, { passive: false });
+        // document.addEventListener('touchmove', noscroll, { passive: false });
+        // document.addEventListener('wheel', noscroll, { passive: false });
 
         openDModal.addEventListener('click', (e) => {
             openDModal.classList.remove('modal-open');
             //スクロールオン
-            document.removeEventListener('touchmove', noscroll);
-            document.removeEventListener('wheel', noscroll);
+            // document.removeEventListener('touchmove', noscroll);
+            // document.removeEventListener('wheel', noscroll);
         });
     });
 }
