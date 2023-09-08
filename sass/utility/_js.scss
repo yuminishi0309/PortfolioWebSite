@@ -8,6 +8,11 @@
     pointer-events: auto;
 }
 
+// smenu表示時のtop固定のgnav
+.topGnav-hide {
+    pointer-events: none;
+}
+
 // メニューボタンアイコン アニメーション
 .menuBtn {
     &__line01,

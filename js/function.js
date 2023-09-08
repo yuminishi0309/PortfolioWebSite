@@ -10,12 +10,16 @@ const isPCSize = (windowWidth >= windowPC);
 // NavMenu設定  -------------------------------------------------------------------
 const menuBtn = document.querySelector('#menuBtn');
 const smenu = document.querySelector('#smenu');
+const topGnav = document.querySelector('#top__gnav');
+
 menuBtn.addEventListener('click', function () {
     smenu.classList.toggle('smenu-fadeIn');
+    topGnav.classList.toggle('topGnav-hide');
 });
 // NavMenuが閉じる
 smenu.addEventListener('click', function () {
     smenu.classList.remove('smenu-fadeIn');
+    topGnav.classList.remove('topGnav-hide');
 });
 
 //menuBtnアニメーション繰り返し設定------------------------------------------------------
