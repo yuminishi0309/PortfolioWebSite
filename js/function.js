@@ -175,7 +175,7 @@ if (activeSize <= windowWidth) {
         const xAreaCenter = areaPosX + activeArea[i].offsetWidth / 2;
         // 箱内にマウスムーブした時の処理
         e.addEventListener('mousemove', (el) => {
-            const scrollPos = window.pageYOffset;
+            const scrollPos = window.scrollY;
             const areaPosY = e.getBoundingClientRect().top;
             const yAreaCenter = scrollPos + areaPosY + activeArea[i].offsetHeight / 2;
             const x = (el.pageX - xAreaCenter);

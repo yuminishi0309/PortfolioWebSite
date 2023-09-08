@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+#thanks {
+    .wrapper {
+        text-align: center;
+        height: 100vh;
+        padding-top: 100px;
+        background: $footerBg;
+        letter-spacing: 0.1em;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 200px;
+        }
+    }
+    
+    .txt {
+        margin-bottom: 100px;
+        color: $grayTxt;
+        font-size: 14px;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 140px;
+            font-size: 16px;
+        }
+    }
+    
+    .btn {
+        display: inline-block;
+    }
+    
+    .link {
+        display: block;
+        padding: 10px 20px;
+        color: $grayTxt;
+        font-weight: 500;
+        text-decoration: none;
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 14px;
+        }
+
+
+        &:hover {
+            color: $graySub;
+        }
+
+    }
+    
+
+}
