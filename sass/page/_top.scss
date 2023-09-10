@@ -663,6 +663,14 @@
 
         &__prev,
         &__next {
+            // width: 40px;
+            // padding: 0 5px;
+
+            @media screen and (min-width: 1024px) {
+                width: 60px;
+                padding: 0 10px;
+            }
+
             &:hover {
                 .swiper-works__prevArrowTip,
                 .swiper-works__prevArrowLine,
@@ -681,15 +689,15 @@
         // prevボタン
         &__prevArrowTip {
             position: relative;
-            top: -2px;
-            left: 6px;
+            top: -3px;
+            left: 9px;
             width: 14px;
             height: 2px;
             background: $blackTxt;
             transform: rotate(-45deg);
             transition: .3s;
         }
-
+        
         &__prevArrowLine {
             width: 40px;
             height: 2px;
@@ -700,8 +708,8 @@
         // nextボタン
         &__nextArrowTip {
             position: relative;
-            top: -2px;
-            left: 20px;
+            top: -4px;
+            left: 30px;
             width: 14px;
             height: 2px;
             background: $blackTxt;

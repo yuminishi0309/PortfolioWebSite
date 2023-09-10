@@ -16,7 +16,7 @@ const swiperWorks = new Swiper ('.swiper-works', {
     pagination: {
         el: '.swiper-works__pagination',
         type: 'bullets',
-        // clickable: false
+        clickable: true
     },
     navigation: {
         prevEl: '.swiper-works__prev',
