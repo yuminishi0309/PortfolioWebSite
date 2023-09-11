@@ -199,7 +199,7 @@ window.addEventListener('scroll', function () {
     const body = document.querySelector('#top');
     // SP
     if (isSPSize) {
-        if (6200 < this.window.scrollY) {
+        if (6000 < this.window.scrollY) {
             body.classList.add('bgChange');
         } else {
             body.classList.remove('bgChange');
@@ -207,7 +207,7 @@ window.addEventListener('scroll', function () {
     }
     //Tab
     if (isTBSize) {
-        if (7000 < this.window.scrollY) {
+        if (6600 < this.window.scrollY) {
             body.classList.add('bgChange');
         } else {
             body.classList.remove('bgChange');
@@ -215,7 +215,7 @@ window.addEventListener('scroll', function () {
     }
     //PC
     if (isPCSize) {
-        if (6400 < this.window.scrollY) {
+        if (6200 < this.window.scrollY) {
             body.classList.add('bgChange');
         } else {
             body.classList.remove('bgChange');
