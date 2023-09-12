@@ -8,7 +8,6 @@
 .wrapper {
     // overflow-y: scroll;
 }
-
 // ↑　入れるとモーダル消したときのガタつきは解消されるがモーダル表示時に背景が止められなくなる
 
 // mv装飾
@@ -27,7 +26,6 @@
         right: 80px;
         height: 420px;
     }
-
     @media screen and (min-width: 1024px) {
         top: 0;
         width: 128px;
@@ -51,7 +49,6 @@
         top: 624px;
         right: 180px;
     }
-
     @media screen and (min-width: 1024px) {
         top: 410px;
         right: 360px;
@@ -74,7 +71,6 @@
         top: 784px;
         right: 44px;
     }
-
     @media screen and (min-width: 1024px) {
         top: 722px;
         right: 92px;
@@ -92,12 +88,10 @@
         margin-bottom: 165px;
         padding-top: 408px;
     }
-
     &__container {
         @media screen and (min-width: 1024px) {
             display: flex;
             margin-bottom: 60px;
-
         }
     }
 
@@ -112,7 +106,6 @@
             margin-bottom: 8px;
             font-size: 44px;
         }
-
         @media screen and (min-width: 1174px) {
             margin-bottom: 12px;
             font-size: 50px;
@@ -129,7 +122,6 @@
         @media screen and (min-width: 768px) {
             font-size: 14px;
         }
-
         @media screen and (min-width: 1024px) {
             margin-bottom: 0;
             font-size: 16px;
@@ -146,7 +138,6 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 80px;
         }
-
         @media screen and (min-width: 1024px) {
             margin-left: 42px;
             margin-bottom: 0;
@@ -156,7 +147,7 @@
         }
     }
 
-    // mvスクロール試し
+    // mvスクロール
     &__wrap {
         width: 100%;
         height: 68vh;
@@ -166,28 +157,20 @@
         @media screen and (min-width: 768px) {
             height: 23vh;
         }
-
         @media screen and (min-width: 1024px) {
             height: 58vh;
         }
     }
-    // 試しここまで
     
     &__bg {
         width: 79%;
         height: 100%;
         margin-left: auto;
         background: url(../images/mv.jpg) center center / cover;
-        
-        @media screen and (min-width: 768px) {
-            // width: 100%;
-            // height: 23vh;
-        }
 
         @media screen and (min-width: 1024px) {
             width: 100%;
             height: 100%;
-            // ↑mvスクロール設定前の数値（bg__wrapなし）
         }
     }
 }
@@ -201,7 +184,6 @@
     @media screen and (min-width: 768px) {
         margin: 0 10%;
     }
-
     @media screen and (min-width: 1024px) {
         margin-bottom: 352px;
     }
@@ -214,7 +196,6 @@
             justify-content: space-between;
             margin-bottom: 160px;
         }
-
         @media screen and (min-width: 1024px) {
             display: block;
             margin-bottom: 148px;
@@ -243,11 +224,9 @@
             left: 0;
             line-height: 2.1;
         }
-
         @media screen and (min-width: 1039px) {
             font-size: 28px;
         }
-
         @media screen and (min-width: 1485px) {
             top: 180px;
             font-size: 40px;
@@ -268,7 +247,6 @@
             aspect-ratio: 2/3.3;
             margin-left: 55%;
         }
-
         @media screen and (min-width: 1024px) {
             position: absolute;
             width: 18vw;
@@ -288,7 +266,6 @@
             bottom: 21%;
             right: auto;
         }
-
         @media screen and (min-width: 1024px) {
             bottom: -350px;
         }
@@ -301,7 +278,6 @@
             width: 37%;
             margin-bottom: 0;
         }
-
         @media screen and (min-width: 1024px) {
             width: 50%;
             margin-left: auto;
@@ -312,7 +288,6 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             align-items: flex-end;
-            // gap: 88px;
             gap: 10%;
             margin-bottom: 72px;
         }
@@ -327,10 +302,8 @@
         @media screen and (min-width: 768px) {
             line-height: 2.3;
         }
-
         @media screen and (min-width: 1024px) {
             flex: none;
-            // margin-bottom: 0;
             margin-bottom: -9px;
             font-size: 18px;
         }
@@ -349,7 +322,6 @@
             width: 90%;
             margin-bottom: 30px;
         }
-
         @media screen and (min-width: 1024px) {
             width: 36%;
             max-width: 183px;
@@ -367,7 +339,6 @@
         @media screen and (min-width: 768px) {
             font-size: 14px;
         }
-
         @media screen and (min-width: 1024px) {
             font-size: 15px;
         }
@@ -379,7 +350,6 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 30px;
         }
-
         @media screen and (min-width: 1024px) {
             margin: 0;
         }
@@ -387,22 +357,12 @@
     }
 
     //自己紹介
-    &__container {
-
-        @media screen and (min-width: 768px) {
-            // position: relative;
-        }
-    }
-
     &__bottom {
-        // position: relative;
-
         @media screen and (min-width: 768px) {
             position: static;
             width: 63%;
             margin: auto;
         }
-
         @media screen and (min-width: 1024px) {
             width: 50%;
             margin: 0;
@@ -412,15 +372,12 @@
 
     &__group {
         display: flex;
-        // justify-content: flex-start;
-        // text-align: center;
         gap: 13px;
         margin-bottom: 16px;
 
         @media screen and (min-width: 768px) {
             margin-bottom: 68px;
         }
-
         @media screen and (min-width: 1024px) {
             gap: 56px;
         }
@@ -451,7 +408,6 @@
             letter-spacing: .2em;
             transform: rotate(90deg) translateX(-50%);
         }
-
         @media screen and (min-width: 1024px) {
             position: static;
             font-size: 13px;
@@ -482,7 +438,6 @@
 
     // 年輪アイコンアニメーション
     &__icon {
-        // position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -497,7 +452,6 @@
             right: 0;
             margin-right: 0;
         }
-
         @media screen and (min-width: 1024px) {
             bottom: -88px;
         }
@@ -530,7 +484,6 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
     }
-
     @media screen and (min-width: 1024px) {
         margin-bottom: 168px;
     }
@@ -577,7 +530,6 @@
         @media screen and (min-width: 768px) {
             font-size: 11px;
         }
-
         @media screen and (min-width: 1024px) {
             font-size: 14px;
         }
@@ -592,14 +544,13 @@
     }
 
     &-works {
+        width: 100%;
         padding: 0 5%;
+        margin-bottom: 200px;
 
         @media screen and (min-width: 768px) {
             padding: 0 10%;
         }
-
-        width: 100%;
-        margin-bottom: 200px;
 
         &__wrapper {
             margin-bottom: 100px;
@@ -612,8 +563,6 @@
             &:hover {
                 opacity: .8;
             }
-
-            @media screen and (min-width: 768px) {}
         }
 
         &__img {
@@ -660,11 +609,8 @@
         }
 
         // ナビゲーションボタン  -----------------------------
-
         &__prev,
         &__next {
-            // width: 40px;
-            // padding: 0 5px;
 
             @media screen and (min-width: 1024px) {
                 width: 60px;
@@ -739,7 +685,6 @@
         margin: 0 5px;
     }
 }
-
 // ↑swiper ---------------------------------
 
 // works(coding) modal 中身  -----------------
@@ -758,30 +703,12 @@
         //Tb,SPで背景固定と中身スクロール
         overflow-y: scroll;
         overscroll-behavior: none;
-
-        @media screen and (min-width: 1024px) {
-            // overflow-y: hidden;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-        }
     }
 
     &__wrap {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // gap: 5%;
         padding: 104px 5%;
 
         @media screen and (min-width: 1024px) {
-            // flex-direction: row;
-
-
-            // justify-content: space-around;
-            // width: 90%;
-            // height: 90%;
             padding: 104px 9%;
         }
     }
@@ -845,7 +772,6 @@
         @media screen and (min-width: 768px) {
             font-size: 16px;
         }
-
         @media screen and (min-width: 1024px) {
             width: 100%;
         }
@@ -927,9 +853,6 @@
         }
 
         &::after {
-            // position: absolute;
-            // top: 0;
-            // right: 0;
             content: "";
             display: block;
             width: 16px;
@@ -943,7 +866,6 @@
         }
     }
 }
-
 // ↑ works(coding) modal 中身  ----------------
 
 // WORKS(design area)
@@ -973,9 +895,7 @@
     }
 
     &__pic {
-        // display: flex;
         width: 100%;
-        // height: 216px;
         padding-bottom: 24px;
         cursor: pointer;
     }
@@ -985,7 +905,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        // object-fit: contain;
     }
 
     &__caption {
@@ -1023,11 +942,9 @@
 
 // works design modal 中身  -----------------
 .modalD {
-
     &__container01,
     &__container02,
     &__container03 {
-        // display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1088,12 +1005,9 @@
 
     &__pic {
         margin-bottom: 108px;
-        // width: 336px;
-        // height: 280px;
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 0;
-            // width: 40%;
         }
     }
 
@@ -1110,7 +1024,6 @@
         @media screen and (min-width: 768px) {
             font-size: 16px;
         }
-
         @media screen and (min-width: 1024px) {
             width: 50%;
         }
@@ -1387,7 +1300,6 @@
             display: block;
             width: 26%;
         }
-
         @media screen and (min-width: 1024px) {
             width: 32%;
         }
@@ -1469,6 +1381,7 @@
         align-items: center;
         font-family: $Inter;
         cursor: pointer;
+
         &:hover {
             .form__submit {
                 color: $graySub;
@@ -1491,6 +1404,7 @@
                 width: 122px;
             }
         }
+
         &:hover::before {
             transform: scale(1, 1);
         }
@@ -1503,6 +1417,7 @@
             font-size: 20px;
             font-weight: 700;
         }
+
         &:hover::after {
             color: $graySub;
         }
@@ -1525,5 +1440,4 @@
         }
     }
 }
-
 //  ↑フォーム  --------------------
