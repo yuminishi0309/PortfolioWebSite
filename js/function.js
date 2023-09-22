@@ -126,19 +126,11 @@ for (let i = 0; i < swiperSlide.length; i++) {
         const modal = swiperSlide[i].getAttribute('data-modal');
         const openModal = document.querySelector(modal);
         openModal.classList.add('modal-open');
-        // PC版スクロールオフ
-        // if (isPCSize) {
-        //     document.addEventListener('touchmove', noscroll, { passive: false });
-        //     document.addEventListener('wheel', noscroll, { passive: false });
-        // }
 
         const closeModal = document.querySelectorAll('.modal__wrap');
         for (let i = 0; i < closeModal.length; i++) {
             closeModal[i].addEventListener('click', (e) => {
                 openModal.classList.remove('modal-open');
-                // PC版スクロールオン
-                // document.removeEventListener('touchmove', noscroll);
-                // document.removeEventListener('wheel', noscroll);
             });
         }
         //Modal内でgo siteボタンクリック後、モーダルを非表示にしない
@@ -156,15 +148,9 @@ for (let i = 0; i < designWorks.length; i++) {
         const DModal = designWorks[i].getAttribute('data-modal');
         const openDModal = document.querySelector(DModal);
         openDModal.classList.add('modal-open');
-        //スクロールオフ
-        // document.addEventListener('touchmove', noscroll, { passive: false });
-        // document.addEventListener('wheel', noscroll, { passive: false });
 
         openDModal.addEventListener('click', (e) => {
             openDModal.classList.remove('modal-open');
-            //スクロールオン
-            // document.removeEventListener('touchmove', noscroll);
-            // document.removeEventListener('wheel', noscroll);
         });
     });
 }
@@ -189,6 +175,13 @@ if (activeSize <= windowWidth) {
             target[0].style.transform = `translate(${x * .006}px, ${y * .016}px)`;
             //shadow-light
             target[1].style.transform = `translate(${x * .03}px, ${y * .03}px)`;
+        });
+         // 箱内からマウスが出た時の処理
+         e.addEventListener('mouseleave', () => {
+            //shadow-dark
+            target[0].style.transform = '';
+            //shadow-light
+            target[1].style.transform = '';
         });
     });
 }
