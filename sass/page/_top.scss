@@ -167,6 +167,7 @@
         height: 100%;
         margin-left: auto;
         background: url(../images/mv.jpg) center center / cover;
+        transition: .3s;
 
         @media screen and (min-width: 1024px) {
             width: 100%;
@@ -635,13 +636,18 @@
         // prevボタン
         &__prevArrowTip {
             position: relative;
-            top: -3px;
-            left: 9px;
+            top: -2px;
+            left: 6px;
             width: 14px;
             height: 2px;
             background: $blackTxt;
             transform: rotate(-45deg);
             transition: .3s;
+
+            @media screen and (min-width: 1024px) {
+                top: -3px;
+                left: 9px;
+            }
         }
         
         &__prevArrowLine {
@@ -654,13 +660,18 @@
         // nextボタン
         &__nextArrowTip {
             position: relative;
-            top: -4px;
-            left: 30px;
+            top: -2px;
+            left: 20px;
             width: 14px;
             height: 2px;
             background: $blackTxt;
             transform: rotate(45deg);
             transition: .3s;
+            
+            @media screen and (min-width: 1024px) {
+                top: -4px;
+                left: 30px;
+            }
         }
 
         &__nextArrowLine {
@@ -703,6 +714,10 @@
         //Tb,SPで背景固定と中身スクロール
         overflow-y: scroll;
         overscroll-behavior: none;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
     }
 
     &__wrap {
@@ -957,6 +972,10 @@
         transition: .5s;
         overflow-y: scroll;
         overscroll-behavior: none;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
     }
 
     &__wrap {
@@ -965,8 +984,6 @@
         justify-content: center;
         align-items: center;
         gap: 5%;
-        // height: 100vh;
-        // ↑containerにoverflow scrollしないならこっちにheightを
         padding: 124px 5%;
 
         @media screen and (min-width: 1024px) {
