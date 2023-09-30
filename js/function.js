@@ -187,31 +187,37 @@ if (activeSize <= windowWidth) {
 }
 
 // CONTACT & footer 背景色変更-----------------------------------------------
-// SP
+const headerLogo = document.querySelector('#header__img');
+const body = document.querySelector('#top');
 window.addEventListener('scroll', function () {
-    const body = document.querySelector('#top');
     // SP
     if (isSPSize) {
         if (6000 < this.window.scrollY) {
             body.classList.add('bgChange');
+            headerLogo.src = "images/logo_gray.svg";
         } else {
             body.classList.remove('bgChange');
+            headerLogo.src = "images/logo_black.svg";
         }
     }
     //Tab
     if (isTBSize) {
         if (6600 < this.window.scrollY) {
             body.classList.add('bgChange');
+            headerLogo.src = "images/logo_gray.svg";
         } else {
             body.classList.remove('bgChange');
+            headerLogo.src = "images/logo_black.svg";
         }
     }
     //PC
     if (isPCSize) {
         if (6200 < this.window.scrollY) {
             body.classList.add('bgChange');
+            headerLogo.src = "images/logo_gray.svg";
         } else {
             body.classList.remove('bgChange');
+            headerLogo.src = "images/logo_black.svg";
         }
     }
 });
