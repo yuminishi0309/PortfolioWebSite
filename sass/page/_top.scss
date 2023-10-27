@@ -5,11 +5,6 @@
     transition: .6s;
 }
 
-.wrapper {
-    // overflow-y: scroll;
-}
-// ↑　入れるとモーダル消したときのガタつきは解消されるがモーダル表示時に背景が止められなくなる
-
 // mv装飾
 .deco--top {
     position: absolute;
@@ -823,18 +818,34 @@
     }
 
     &__detail {
-        margin-bottom: 42px;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__tool {
+        min-width: 72px;
     }
 
     &__desc {
         margin-bottom: 46px;
-    }
 
-    &__margin {
-        margin-bottom: 56px;
+        > .modal__txt {
+            margin-bottom: 36px;
+        
+            @media screen and (min-width: 768px) {
+                margin-bottom: 42px;
+            }
 
-        @media screen and (min-width: 768px) {
-            margin-bottom: 84px;
+            &:last-child {
+                margin-bottom: 56px;
+            
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 84px;
+                }
+            }
         }
     }
 
