@@ -1088,11 +1088,23 @@
     }
 
     &__detail {
-        margin-bottom: 42px;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 80px;
+        }
     }
 
     &__desc {
         margin-bottom: 46px;
+
+        > .modal__txt {
+            margin-bottom: 36px;
+        
+            @media screen and (min-width: 768px) {
+                margin-bottom: 42px;
+            }
+        }
     }
 }
 
