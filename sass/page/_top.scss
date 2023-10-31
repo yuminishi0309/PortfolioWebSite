@@ -1079,10 +1079,6 @@
         }
     }
 
-    &__kind {
-        margin-bottom: 28px;
-    }
-
     &__list {
         display: flex;
     }
@@ -1093,16 +1089,26 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 80px;
         }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 60px;
+
+        }
     }
 
     &__desc {
-        margin-bottom: 46px;
 
-        > .modal__txt {
+        > .modalD__txt {
             margin-bottom: 36px;
         
             @media screen and (min-width: 768px) {
                 margin-bottom: 42px;
+            }
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 24px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
