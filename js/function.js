@@ -172,9 +172,9 @@ if (activeSize <= windowWidth) {
             const y = (el.pageY - yAreaCenter);
             //パララックスさせる要素にstyle指定
             //shadow-dark
-            target[0].style.transform = `translate(${x * .006}px, ${y * .016}px)`;
+            target[0].style.transform = `translate(${x * .008}px, ${y * .026}px)`;
             //shadow-light
-            target[1].style.transform = `translate(${x * .03}px, ${y * .03}px)`;
+            target[1].style.transform = `translate(${x * .04}px, ${y * .06}px)`;
         });
          // 箱内からマウスが出た時の処理
          e.addEventListener('mouseleave', () => {
