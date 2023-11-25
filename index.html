@@ -189,6 +189,18 @@
         <div class="swiper__container">
           <div class="swiper swiper-works">
             <div class="swiper-wrapper swiper-works__wrapper">
+              <!-- スライド react todo list-->
+              <div class="swiper-slide swiper-works__slide" data-modal="#modal__react-todo">
+                <p class="swiper-works__pic">
+                  <img src="images/works3.jpg" alt="webサイト作品サムネイル" class="swiper-works__img">
+                </p>
+                <dl class="swiper-works__desc">
+                  <dt class="swiper-works__ttl">Todo List(React)</dt>
+                  <dd class="swiper-works__txt">6th Month</dd>
+                  <dd class="swiper-works__txt">Design、Coding</dd>
+                  <dd class="swiper-works__txt">レスポンシブ対応、トップページのみ</dd>
+                </dl>
+              </div>
               <!-- スライド cafe azito-->
               <div class="swiper-slide swiper-works__slide" data-modal="#modal__azito">
                 <p class="swiper-works__pic">
@@ -291,6 +303,50 @@
 
         <!-- ↓Modal(Coding)中身 ------------------------------------  -->
         <div class="modal">
+          <!-- Modal(Web) react todo list -->
+          <div id="modal__react-todo" class="modal__container">
+            <div class="modal__wrap">
+              <p class="modal__closeBtn">Close</p>
+              <p class="modal__pic"><img src="images/works_modal_azito.png" alt="webサイト作品" class="modal__img"></p>
+              <div class="modal__box">
+                <p class="modal__ttl">Todo List（React）</p>
+                <p class="modal__sub">ReactTodo List</p>
+                <p class="modal__kind">Coding、レスポンシブ対応</p>
+                <dl class="modal__detail">
+                  <div class="modal__list">
+                    <dt class="modal__month">制作時期　：</dt>
+                    <dd class="modal__txt">2023年11月</dd>
+                  </div>
+                  <div class="modal__list">
+                    <dt class="modal__period">制作時間　：</dt>
+                    <dd class="modal__txt">約7時間（Reactの環境構築、サーバーへのアップロード等含む）</dd>
+                  </div>
+                  <div class="modal__list">
+                    <dt class="modal__tool">使用ツール：</dt>
+                    <dd class="modal__txt">VSCode、React、Github</dd>
+                  </div>
+                </dl>
+                <dl class="modal__desc">
+                  <dt class="modal__desc-ttl">目的：</dt>
+                  <dd class="modal__txt">
+                    ・Reactの大枠を体感するため
+                    ・Reactの練習のため
+                  </dd>
+                  <dt class="modal__desc-ttl">説明：</dt>
+                  <dd class="modal__txt">
+                    Reactを初めて使用した作品
+                    動画を見ながら作成したが、Reactの知識が全く無い状態から開始したためつまづく点が多く、調べながら作成し時間がかかった
+                    JavaScriptの知識が未熟なため、1つ1つの処理の理解に時間がかかった
+                    hooksやprops、コンポーネント管理などを通して、少しだがReactの利点を体感することができた
+                  </dd>
+                  <dd class="modal__txt">
+                  </dd>
+                </dl>
+                <p class="modal__more"><a href="works_react-todo" target="blank" class="modal__link">GO TO
+                    SITE</a></p>
+              </div>
+            </div>
+          </div>
           <!-- Modal(Web) cafe azito -->
           <div id="modal__azito" class="modal__container">
             <div class="modal__wrap">
@@ -882,7 +938,7 @@
       <section id="skills" class="skills">
         <h2 class="skills__ttl">SKILLS</h2>
         <!-- 1st column ---------------------------------------------- -->
-        <p class="skills__category">PROGRAMING & CMS</p>
+        <p class="skills__category">Programming & CMS</p>
         <p class="skills__sub">プログラミング & コンテンツ管理システム</p>
         <div class="skills__wrap">
           <!-- パララックスアニメーション試行中 -->
